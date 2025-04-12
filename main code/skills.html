@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Assessment - Career Compass</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/skills.css">
+</head>
+<body>
+    <div class="container">
+        <div class="skills-header">
+            <h1>Skills Assessment</h1>
+            <p>Rate your skills to get personalized career suggestions</p>
+        </div>
+
+        <form id="skills-form" class="skills-form">
+            <!-- Technical Skills -->
+            <section class="skills-section">
+                <h2>Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <label>Programming</label>
+                        <div class="rating">
+                            <input type="radio" name="programming" value="5" id="prog5"><label for="prog5">5</label>
+                            <input type="radio" name="programming" value="4" id="prog4"><label for="prog4">4</label>
+                            <input type="radio" name="programming" value="3" id="prog3"><label for="prog3">3</label>
+                            <input type="radio" name="programming" value="2" id="prog2"><label for="prog2">2</label>
+                            <input type="radio" name="programming" value="1" id="prog1"><label for="prog1">1</label>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <label>Data Analysis</label>
+                        <div class="rating">
+                            <input type="radio" name="data_analysis" value="5" id="da5"><label for="da5">5</label>
+                            <input type="radio" name="data_analysis" value="4" id="da4"><label for="da4">4</label>
+                            <input type="radio" name="data_analysis" value="3" id="da3"><label for="da3">3</label>
+                            <input type="radio" name="data_analysis" value="2" id="da2"><label for="da2">2</label>
+                            <input type="radio" name="data_analysis" value="1" id="da1"><label for="da1">1</label>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <label>Web Development</label>
+                        <div class="rating">
+                            <input type="radio" name="web_dev" value="5" id="web5"><label for="web5">5</label>
+                            <input type="radio" name="web_dev" value="4" id="web4"><label for="web4">4</label>
+                            <input type="radio" name="web_dev" value="3" id="web3"><label for="web3">3</label>
+                            <input type="radio" name="web_dev" value="2" id="web2"><label for="web2">2</label>
+                            <input type="radio" name="web_dev" value="1" id="web1"><label for="web1">1</label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Soft Skills -->
+            <section class="skills-section">
+                <h2>Soft Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <label>Communication</label>
+                        <div class="rating">
+                            <input type="radio" name="communication" value="5" id="comm5"><label for="comm5">5</label>
+                            <input type="radio" name="communication" value="4" id="comm4"><label for="comm4">4</label>
+                            <input type="radio" name="communication" value="3" id="comm3"><label for="comm3">3</label>
+                            <input type="radio" name="communication" value="2" id="comm2"><label for="comm2">2</label>
+                            <input type="radio" name="communication" value="1" id="comm1"><label for="comm1">1</label>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <label>Leadership</label>
+                        <div class="rating">
+                            <input type="radio" name="leadership" value="5" id="lead5"><label for="lead5">5</label>
+                            <input type="radio" name="leadership" value="4" id="lead4"><label for="lead4">4</label>
+                            <input type="radio" name="leadership" value="3" id="lead3"><label for="lead3">3</label>
+                            <input type="radio" name="leadership" value="2" id="lead2"><label for="lead2">2</label>
+                            <input type="radio" name="leadership" value="1" id="lead1"><label for="lead1">1</label>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <label>Problem Solving</label>
+                        <div class="rating">
+                            <input type="radio" name="problem_solving" value="5" id="ps5"><label for="ps5">5</label>
+                            <input type="radio" name="problem_solving" value="4" id="ps4"><label for="ps4">4</label>
+                            <input type="radio" name="problem_solving" value="3" id="ps3"><label for="ps3">3</label>
+                            <input type="radio" name="problem_solving" value="2" id="ps2"><label for="ps2">2</label>
+                            <input type="radio" name="problem_solving" value="1" id="ps1"><label for="ps1">1</label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Additional Information -->
+            <section class="additional-info">
+                <h2>Additional Information</h2>
+                <div class="form-group">
+                    <label for="education">Education Level</label>
+                    <select id="education" name="education" required>
+                        <option value="">Select your education level</option>
+                        <option value="high_school">High School</option>
+                        <option value="bachelors">Bachelor's Degree</option>
+                        <option value="masters">Master's Degree</option>
+                        <option value="phd">PhD</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="experience">Years of Experience</label>
+                    <select id="experience" name="experience" required>
+                        <option value="">Select your experience</option>
+                        <option value="0-2">0-2 years</option>
+                        <option value="3-5">3-5 years</option>
+                        <option value="6-10">6-10 years</option>
+                        <option value="10+">10+ years</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="location">Preferred Location</label>
+                    <input type="text" id="location" name="location" placeholder="e.g., New York, Remote" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="interests">Career Interests</label>
+                    <textarea id="interests" name="interests" placeholder="Describe your career interests and goals..." required></textarea>
+                </div>
+            </section>
+
+            <button type="submit" class="btn btn-primary btn-block">Get Career Suggestions</button>
+        </form>
+    </div>
+
+    <script src="js/skills.js"></script>
+</body>
+</html> 
