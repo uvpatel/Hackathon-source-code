@@ -1,0 +1,136 @@
+/* Custom styles for range inputs */
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background: #e5e7eb;
+    height: 0.5rem;
+    border-radius: 0.25rem;
+}
+
+input[type="range"]::-moz-range-track {
+    background: #e5e7eb;
+    height: 0.5rem;
+    border-radius: 0.25rem;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: -4px;
+    background-color: #4f46e5;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+}
+
+input[type="range"]::-moz-range-thumb {
+    border: none;
+    background-color: #4f46e5;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+}
+
+input[type="range"]:focus {
+    outline: none;
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {
+    outline: 2px solid #4f46e5;
+    outline-offset: 2px;
+}
+
+input[type="range"]:focus::-moz-range-thumb {
+    outline: 2px solid #4f46e5;
+    outline-offset: 2px;
+}
+
+/* Chat messages container */
+#chatMessages {
+    scrollbar-width: thin;
+    scrollbar-color: #e5e7eb transparent;
+}
+
+#chatMessages::-webkit-scrollbar {
+    width: 6px;
+}
+
+#chatMessages::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#chatMessages::-webkit-scrollbar-thumb {
+    background-color: #e5e7eb;
+    border-radius: 3px;
+}
+
+/* Loading spinner */
+.loading-spinner {
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #4f46e5;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Transitions */
+.fade-enter {
+    opacity: 0;
+}
+
+.fade-enter-active {
+    opacity: 1;
+    transition: opacity 200ms ease-in;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit-active {
+    opacity: 0;
+    transition: opacity 200ms ease-in;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    .max-w-7xl {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+/* Form validation styles */
+.form-error {
+    border-color: #ef4444;
+}
+
+.error-message {
+    color: #ef4444;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+/* Button hover effects */
+.btn-hover-effect {
+    transition: transform 0.1s ease-in-out;
+}
+
+.btn-hover-effect:hover {
+    transform: translateY(-1px);
+}
+
+.btn-hover-effect:active {
+    transform: translateY(0);
+} 
