@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Career Compass - Intelligent Virtual Career Advisor</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="log.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <h1><i class="fas fa-compass"></i> Career Compass</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#skills">Skills Assessment</a></li>
+          <li><a href="#careers">Career Matches</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#about">About</a></li>
+          <li class="login-btn"><a href="login.html">Login</a></li>
+          <li class="signup-btn"><a href="login.html">Sign Up</a></li>
+        </ul>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <h1>Discover Your Ideal Career Path</h1>
+          <p>
+            Your AI-powered career companion to navigate the professional world
+          </p>
+          <div class="hero-buttons">
+            <button id="get-started-btn" class="primary-btn">
+              Get Started
+            </button>
+            <button class="secondary-btn">Learn More</button>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img
+            src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+            alt="Career guidance illustration"
+          />
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section class="features">
+        <h2>How Career Compass Works</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <i class="fas fa-tasks"></i>
+            <h3>Skill Assessment</h3>
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Skill Assessment" class="feature-image">
+            <p>
+              Take comprehensive tests to identify your strengths and areas for
+              growth
+            </p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-chart-line"></i>
+            <h3>Market Analysis</h3>
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Market Analysis" class="feature-image">
+            <p>
+              Get insights on how your skills match with current job market
+              demands
+            </p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-lightbulb"></i>
+            <h3>Career Suggestions</h3>
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Career Suggestions" class="feature-image">
+            <p>
+              Receive AI-powered career recommendations tailored to your profile
+            </p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-people-arrows"></i>
+            <h3>Networking</h3>
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Networking" class="feature-image">
+            <p>
+              Discover networking opportunities with professionals in your
+              target field
+            </p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-file-alt"></i>
+            <h3>Resume Builder</h3>
+            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Resume Builder" class="feature-image">
+            <p>Create and optimize your resume with expert guidance</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-comments"></i>
+            <h3>Interview Prep</h3>
+            <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Interview Preparation" class="feature-image">
+            <p>
+              Practice with simulated interviews and get personalized feedback
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Assessment Section -->
+      <section id="skills" class="skills-section">
+        <h2>Assess Your Skills</h2>
+        <p>
+          Start by evaluating your skills to get personalized career
+          recommendations
+        </p>
+
+        <div class="skills-container">
+          <div class="skills-categories">
+            <button class="skill-category active" data-category="technical">
+              <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Technical Skills">
+              <span>Technical Skills</span>
+            </button>
+            <button class="skill-category" data-category="soft">
+              <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Soft Skills">
+              <span>Soft Skills</span>
+            </button>
+            <button class="skill-category" data-category="industry">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Industry Knowledge">
+              <span>Industry Knowledge</span>
+            </button>
+          </div>
+
+          <div class="skill-assessment-form">
+            <form id="technical-skills-form" class="skill-form active">
+              <h3>Rate your technical skills (1-5)</h3>
+              
+              <div class="skill-visualization">
+                <div class="skill-radar-chart">
+                  <canvas id="technicalSkillsChart"></canvas>
+                </div>
+                <div class="skill-description">
+                  <p>Your technical skills are visualized in this radar chart. The more you rate a skill, the further it extends from the center.</p>
+                </div>
+              </div>
+
+              <div class="skill-items-container">
+                <div class="skill-item">
+                  <div class="skill-item-header">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Programming">
+                    <label for="programming">Programming</label>
+                  </div>
+                  <div class="rating">
+                    <input type="radio" id="programming-1" name="programming" value="1" />
+                    <input type="radio" id="programming-2" name="programming" value="2" />
+                    <input type="radio" id="programming-3" name="programming" value="3" />
+                    <input type="radio" id="programming-4" name="programming" value="4" />
+                    <input type="radio" id="programming-5" name="programming" value="5" />
+                    <div class="rating-labels">
+                      <span>1</span>
+                      <span>2</span>
+                      <span>3</span>
+                      <span>4</span>
+                      <span>5</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-item-header">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Data Analysis">
+                    <label for="data-analysis">Data Analysis</label>
+                  </div>
+                  <div class="rating">
+                    <input type="radio" id="data-1" name="data-analysis" value="1" />
+                    <input type="radio" id="data-2" name="data-analysis" value="2" />
+                    <input type="radio" id="data-3" name="data-analysis" value="3" />
+                    <input type="radio" id="data-4" name="data-analysis" value="4" />
+                    <input type="radio" id="data-5" name="data-analysis" value="5" />
+                    <div class="rating-labels">
+                      <span>1</span>
+                      <span>2</span>
+                      <span>3</span>
+                      <span>4</span>
+                      <span>5</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-item-header">
+                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Design">
+                    <label for="design">Design</label>
+                  </div>
+                  <div class="rating">
+                    <input type="radio" id="design-1" name="design" value="1" />
+                    <input type="radio" id="design-2" name="design" value="2" />
+                    <input type="radio" id="design-3" name="design" value="3" />
+                    <input type="radio" id="design-4" name="design" value="4" />
+                    <input type="radio" id="design-5" name="design" value="5" />
+                    <div class="rating-labels">
+                      <span>1</span>
+                      <span>2</span>
+                      <span>3</span>
+                      <span>4</span>
+                      <span>5</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-item-header">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Project Management">
+                    <label for="project-management">Project Management</label>
+                  </div>
+                  <div class="rating">
+                    <input type="radio" id="pm-1" name="project-management" value="1" />
+                    <input type="radio" id="pm-2" name="project-management" value="2" />
+                    <input type="radio" id="pm-3" name="project-management" value="3" />
+                    <input type="radio" id="pm-4" name="project-management" value="4" />
+                    <input type="radio" id="pm-5" name="project-management" value="5" />
+                    <div class="rating-labels">
+                      <span>1</span>
+                      <span>2</span>
+                      <span>3</span>
+                      <span>4</span>
+                      <span>5</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button type="submit" class="submit-btn">Continue</button>
+            </form>
+
+            <!-- Other skill forms would be displayed similar to this one -->
+            <form id="soft-skills-form" class="skill-form">
+              <h3>Rate your soft skills (1-5)</h3>
+              <!-- Form fields similar to technical skills -->
+              <button type="submit" class="submit-btn">Continue</button>
+            </form>
+
+            <form id="industry-skills-form" class="skill-form">
+              <h3>Rate your industry knowledge (1-5)</h3>
+              <!-- Form fields similar to technical skills -->
+              <button type="submit" class="submit-btn">
+                Submit Assessment
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Write About Me Section -->
+      <section id="about" class="write-about-section">
+        <h2>Write About Me</h2>
+        <p>Create a compelling professional profile that highlights your unique strengths and experiences</p>
+        
+        <div class="write-about-container">
+          <div class="write-about-form">
+            <form id="profile-form">
+              <div class="form-group">
+                <label for="professional-summary">Professional Summary</label>
+                <textarea id="professional-summary" placeholder="Write a brief summary of your professional background and career goals..."></textarea>
+                <div class="character-count">0/200 characters</div>
+              </div>
+
+              <div class="form-group">
+                <label for="key-strengths">Key Strengths</label>
+                <div class="strengths-tags">
+                  <input type="text" id="strength-input" placeholder="Add your strengths (e.g., Leadership, Problem Solving)">
+                  <div class="tags-container"></div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="career-goals">Career Goals</label>
+                <textarea id="career-goals" placeholder="Describe your short-term and long-term career goals..."></textarea>
+              </div>
+
+              <div class="form-group">
+                <label for="achievements">Key Achievements</label>
+                <div class="achievements-container">
+                  <div class="achievement-item">
+                    <input type="text" placeholder="Achievement title">
+                    <textarea placeholder="Describe your achievement and its impact"></textarea>
+                    <button class="remove-achievement">Remove</button>
+                  </div>
+                </div>
+                <button type="button" class="add-achievement-btn">Add Achievement</button>
+              </div>
+
+              <div class="form-group">
+                <label for="preferred-industries">Preferred Industries</label>
+                <select id="preferred-industries" multiple>
+                  <option value="tech">Technology</option>
+                  <option value="finance">Finance</option>
+                  <option value="healthcare">Healthcare</option>
+                  <option value="education">Education</option>
+                  <option value="marketing">Marketing</option>
+                  <option value="engineering">Engineering</option>
+                </select>
+              </div>
+
+              <button type="submit" class="submit-btn">Save Profile</button>
+            </form>
+          </div>
+
+          <div class="profile-preview">
+            <h3>Profile Preview</h3>
+            <div class="preview-content">
+              <div class="preview-section">
+                <h4>Professional Summary</h4>
+                <p class="summary-preview">Your summary will appear here...</p>
+              </div>
+              <div class="preview-section">
+                <h4>Key Strengths</h4>
+                <div class="strengths-preview"></div>
+              </div>
+              <div class="preview-section">
+                <h4>Career Goals</h4>
+                <p class="goals-preview">Your career goals will appear here...</p>
+              </div>
+              <div class="preview-section">
+                <h4>Achievements</h4>
+                <div class="achievements-preview"></div>
+              </div>
+              <div class="preview-section">
+                <h4>Preferred Industries</h4>
+                <div class="industries-preview"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Career Matches Section -->
+      <section id="careers" class="careers-section">
+        <h2>Your Career Matches</h2>
+        <p>
+          Based on your skills and market trends, here are your top recommended
+          career paths
+        </p>
+
+        <div class="career-results">
+          <div class="login-required">
+            <i class="fas fa-lock"></i>
+            <h3>Complete your assessment to see career matches</h3>
+            <p>
+              Sign up or log in to view your personalized career recommendations
+            </p>
+            <button class="primary-btn">Sign Up Now</button>
+          </div>
+
+          <!-- This content would be shown after login and assessment -->
+          <div class="career-matches hidden">
+            <div class="career-card">
+              <div class="match-percentage">94%</div>
+              <h3>Data Scientist</h3>
+              <div class="salary-range">$85,000 - $150,000</div>
+              <div class="market-demand high">High Demand</div>
+              <p>
+                Your analytical skills and programming knowledge make you an
+                excellent fit for this role.
+              </p>
+              <button class="details-btn">View Details</button>
+            </div>
+            <!-- More career cards would be displayed here -->
+          </div>
+        </div>
+      </section>
+
+      <!-- AI Advisor Section -->
+      <section class="ai-advisor-section">
+        <h2>Your Personal AI Career Advisor</h2>
+        <p>Get instant career guidance through our intelligent AI assistant</p>
+
+        <div class="ai-advisor-content">
+          <div class="ai-advisor-info">
+            <h3>How Can Our AI Advisor Help You?</h3>
+            <ul class="ai-capabilities">
+              <li>
+                <i class="fas fa-chart-line"></i>
+                <div>
+                  <h4>Skill Assessment</h4>
+                  <p>
+                    Evaluate your technical and soft skills to identify your
+                    strengths and areas for improvement
+                  </p>
+                </div>
+              </li>
+              <li>
+                <i class="fas fa-briefcase"></i>
+                <div>
+                  <h4>Career Recommendations</h4>
+                  <p>
+                    Receive personalized career path suggestions based on your
+                    skills and interests
+                  </p>
+                </div>
+              </li>
+              <li>
+                <i class="fas fa-file-alt"></i>
+                <div>
+                  <h4>Resume Guidance</h4>
+                  <p>
+                    Get tips on how to improve your resume for your target roles
+                  </p>
+                </div>
+              </li>
+              <li>
+                <i class="fas fa-comments"></i>
+                <div>
+                  <h4>Interview Preparation</h4>
+                  <p>
+                    Practice with common interview questions and receive
+                    feedback on your answers
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <button class="open-chatbot-btn primary-btn">
+              Chat With AI Advisor
+            </button>
+          </div>
+          <div class="ai-advisor-preview">
+            <div class="chatbot-preview">
+              <div class="preview-header">
+                <h4><i class="fas fa-robot"></i> Career AI Advisor</h4>
+              </div>
+              <div class="preview-messages">
+                <div class="preview-message bot">
+                  Hello! I'm your AI Career Advisor. How can I help you today?
+                </div>
+                <div class="preview-message user">
+                  I want to find a career that matches my skills
+                </div>
+                <div class="preview-message bot">
+                  I can definitely help with that! Let's start with assessing
+                  your skills. How would you rate your programming abilities on
+                  a scale of 1-5?
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Resources Section -->
+      <section id="resources" class="resources-section">
+        <h2>Career Resources</h2>
+        <div class="resources-grid">
+          <div class="resource-card">
+            <i class="fas fa-file-alt"></i>
+            <h3>Resume Builder</h3>
+            <p>
+              Create a professional resume with our AI-powered resume builder
+            </p>
+            <a href="#resume-builder" class="resource-link">Get Started</a>
+          </div>
+          <div class="resource-card">
+            <i class="fas fa-comments"></i>
+            <h3>Interview Prep</h3>
+            <p>Practice virtual interviews with AI feedback</p>
+            <a href="#interview-prep" class="resource-link">Practice Now</a>
+          </div>
+          <div class="resource-card">
+            <i class="fas fa-chart-bar"></i>
+            <h3>Market Insights</h3>
+            <p>Explore industry trends and salary information</p>
+            <a href="#market-insights" class="resource-link">View Insights</a>
+          </div>
+          <div class="resource-card">
+            <i class="fas fa-network-wired"></i>
+            <h3>Networking</h3>
+            <p>Connect with professionals in your target industry</p>
+            <a href="#networking" class="resource-link">Find Connections</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section class="testimonials">
+        <h2>Success Stories</h2>
+        <div class="testimonial-slider">
+          <div class="testimonial-slide">
+            <div class="testimonial-content">
+              <p>
+                "Career Compass helped me discover my passion for UX design and
+                guided me through the career transition. I'm now working at my
+                dream company!"
+              </p>
+              <div class="testimonial-author">
+                <div class="author-image">
+                  <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Sarah Johnson" />
+                </div>
+                <div class="author-info">
+                  <h4>Sarah Johnson</h4>
+                  <p>UX Designer at TechVision</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- More testimonial slides would be added here -->
+        </div>
+        <div class="slider-controls">
+          <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+          <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Log In</h2>
+        <form id="login-form">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <button type="submit" class="primary-btn">Log In</button>
+          <p class="form-footer">
+            Don't have an account?
+            <a href="#signup" class="show-signup">Sign Up</a>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signup-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Sign Up</h2>
+        <form id="signup-form">
+          <div class="form-group">
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" name="full-name" required />
+          </div>
+          <div class="form-group">
+            <label for="signup-email">Email</label>
+            <input type="email" id="signup-email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="signup-password">Password</label>
+            <input
+              type="password"
+              id="signup-password"
+              name="password"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="confirm-password">Confirm Password</label>
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+              required
+            />
+          </div>
+          <button type="submit" class="primary-btn">Sign Up</button>
+          <p class="form-footer">
+            Already have an account?
+            <a href="#login" class="show-login">Log In</a>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2><i class="fas fa-compass"></i> Career Compass</h2>
+          <p>Your AI-powered career companion</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-section">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#team">Our Team</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Features</h3>
+            <ul>
+              <li><a href="#skills">Skills Assessment</a></li>
+              <li><a href="#careers">Career Matching</a></li>
+              <li><a href="#resume">Resume Builder</a></li>
+              <li><a href="#interview">Interview Prep</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#guides">Career Guides</a></li>
+              <li><a href="#tutorials">Tutorials</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#support">Support</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Career Compass. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a href="#" aria-label="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="skills.js"></script>
+
+    <!-- AI Career Advisor Chatbot -->
+    <div class="chatbot-container">
+      <div class="chatbot-header">
+        <h3><i class="fas fa-robot"></i> Career AI Advisor</h3>
+        <i class="fas fa-chevron-up" id="chatbot-toggle"></i>
+      </div>
+      <div class="chatbot-body">
+        <div class="chat-message bot-message">
+          <div class="message-content">
+            Hello! I'm your AI Career Advisor. I can help you explore career
+            paths, assess skills, and prepare for interviews. How can I help you
+            today?
+          </div>
+        </div>
+      </div>
+      <div class="chatbot-input">
+        <input
+          type="text"
+          placeholder="Ask me about careers, skills, or interviews..."
+        />
+        <button class="send-btn"><i class="fas fa-paper-plane"></i></button>
+      </div>
+    </div>
+  </body>
+</html>
